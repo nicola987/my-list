@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { WrapperToDoList, H1 } from "./components/Wrapper.styled";
+import BoxInput from "./components/BoxInput";
+import List from "./components/List";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WrapperToDoList>
+      <H1>React To Do List !</H1>
+      <BoxInput />
+      <List />
+    </WrapperToDoList>
   );
 }
 
